@@ -1,0 +1,1 @@
+In this exercise I'll be recreating the Google homepage using HTML and CSS in order to develop my skills and understand how web pages are built.
