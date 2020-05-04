@@ -22,10 +22,102 @@
     .header{
         display: inline-block;
         padding-left: 15px;
+        color: black;
+        text-decoration: 0;
+    }
+    .header:hover{
+        text-decoration: underline;
     }
     .right{
         float:right;
         padding-right: 15px;
+    }
+    #form{
+        border: 1px 1px 1px 1px;
+        width: 85%;
+        height: 75%;
+        position: relative;
+        top: 10%;
+        border: 0;
+        background-color: white;
+        font-size: 18px;
+    }
+    #searchform{
+        top: 20%;
+        position: relative;
+        width: 100%; 
+        text-align: center;
+        height: 400px;
+        margin-top: 30px;
+    }
+    #wrapper{
+        width: 600px;
+        height: 2.5em;
+        font-size: 16px; 
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -300px;
+        border-radius: 100px;
+        border: 1px solid lightgray;
+    }
+    form{
+        height: 100%;
+    }
+    #logo{
+        position: relative;
+        padding-top: 250px;
+    }
+    #buttons{
+        position: relative;
+        margin-top: 80px;
+    }
+    button{
+        height: 36px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+        color: #5F6368;
+        font-size: 14px;
+    }
+
+    button:hover{
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        border: 1px solid #c6c6c6;
+        color: #222;
+    }
+    #wrapper:hover{
+        border: 1px solid white;
+        box-shadow:  0 0 8px rgba(0,0,0,0.3);
+    }
+    #footer {
+        background-color: #f2f2f2;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        border-top: 1px solid #c6c6c6;
+        color: #5F6368;
+
+        
+
+    }
+    .footleft{
+        padding-top: 10px;
+        display: inline-block;
+        padding-left: 16px;
+        
+    }
+    .footright{
+        padding-top: 10px;
+        display: inline-block;
+        padding-right: 16px;
+        float: right;
+        
     }
 </style>
 <html> 
@@ -33,21 +125,38 @@
     <body id="gsr" class="hp vasq big">
         <div id="viewport" class="ctr-p">
             <div id="gb">
-                <p class="header">About</p>
-                <p class ="header">Store</p>
-                <p class ="header right">Images</p>
-                <p class ="header right">Gmail</p>               
+                <a href="https://google.com" class="header">About</a>
+                <a href="https://google.com" class ="header">Store</a>
+                <a href="https://google.com" class ="header right">Images</a>
+                <a href="https://google.com" class ="header right">Gmail</a>               
             </div>
             <div id="searchform">
-                <form id="form" 
-                style="overflow:visible" 
-                method="GET" name="f" 
-                role="search"></form>
+                <img  id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+                <div id="wrapper">
+                    <form
+                    style="overflow:visible" 
+                    method="GET" name="f" 
+                    role="search"> 
+                        <input  id="form" type="text">
+                    </form>
+                </div>
+                <div id="buttons">
+                    <button>Google Search</button>
+                    <button>I'm Feeling Lucky</button>
 
 
+                </div>
         
             </div>
+            <div id="footer">
+                <span class="footleft">Test</span>
+                <span class="footleft">Business</span>
+                <span class="footright">Settings</span>
+                <span class="footright">Terms</span>
+                <span class="footright">Privacy</span>
 
+
+            </div>
 
         </div>     
         
